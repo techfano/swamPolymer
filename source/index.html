@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <title>Web app Architecture by Techfano</title>
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+    <link type="text/css" rel="stylesheet" href="../assets/style.css" />
+
+    <script type="text/javascript" src="../polymer/webcomponentsjs/webcomponents.js"></script>
+
+    <link rel="import" href="../polymer/polymer/polymer.html" />
+    <link rel="import" href="../polymer/core-drawer-panel/core-drawer-panel.html" />
+    <link rel="import" href="../polymer/core-header-panel/core-header-panel.html" />
+    <link rel="import" href="../polymer/core-icon-button/core-icon-button.html" />
+    <link rel="import" href="../polymer/core-item/core-item.html" />
+    <link rel="import" href="../polymer/core-label/core-label.html" />
+    <link rel="import" href="../polymer/core-menu/core-menu.html" />
+    <link rel="import" href="../polymer/core-toolbar/core-toolbar.html" />
+    <link rel="import" href="../polymer/paper-button/paper-button.html" />
+    <link rel="import" href="../polymer/paper-input/paper-input.html" />
+    <link rel="import" href="../polymer/paper-shadow/paper-shadow.html" />
+    <link rel="import" href="../polymer/paper-spinner/paper-spinner.html" />
+    <link rel="import" href="../polymer/paper-toast/paper-toast.html" />
+    <link rel="import" href="../polymer/font-roboto/roboto.html" />
+</head>
+
+<body>
+
+    <!--<nav class="navbar navbar-inverse">
+
+	<div class="container-fluid">
+    
+        <div class="navbar-header">
+          
+          <a class="navbar-brand" href="">Brand</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+          </ul>
+        </div>
+    
+    </div>
+
+</nav>-->
+
+    <div id="container" layout vertical center ng-view></div>
+
+    <!--<footer class="row">
+	<div class="panel-footer text-center">
+		<p>Copyright (c) some year</p>
+	</div>
+</footer>-->
+
+</body>
+
+<script data-main="js/main.js" src="js/libs/requirejs/require.js"></script>
+
+</html>

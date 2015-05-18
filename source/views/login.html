@@ -1,0 +1,29 @@
+
+<paper-shadow ng-init="user={}" z="2" id="box-login" >
+	
+	<div ng-show="!loading" vertical layout center >
+	
+		<core-label>Prodesign</core-label>
+		
+		<paper-input label="User Name" ng-model="user.name" auto-vertical floatingLabel>
+		</paper-input>
+		
+		<paper-input-decorator label="User Password" floatingLabel>
+	    	<input is="core-input" ng-model="user.password" type="password">
+	    </paper-input-decorator>
+		<!-- <paper-input type="password" label="Password" ng-model="user.password" auto-vertical></paper-input> -->
+		<!-- <paper-button id="button-login" > -->
+			<core-icon-button class="blue" icon="account-box" ng-disabled="!user.name || !user.password" ng-click="getLogin(user)"><span>Sign In</span></core-icon-button> 
+		<!-- </paper-button> -->
+
+	</div>
+
+	<div ng-show="loading" vertical layout center>
+
+		<paper-spinner class="blue" active></paper-spinner>
+
+	</div>
+
+	<paper-toast id="toast-login" class="red" ng-model="toastLogin.text" ng-opened="toastLogin.open"></paper-toast>
+
+</paper-shadow>

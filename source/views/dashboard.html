@@ -1,0 +1,42 @@
+<core-drawer-panel responsiveWidth="1280px" forceNarrow="true">
+  <core-header-panel drawer>
+    <core-toolbar class="dark-theme">
+    	<core-icon-button icon="menu" core-drawer-toggle></core-icon-button>
+    	<div>Menu</div>
+    </core-toolbar>
+    <div> 
+    	<core-menu selected="0">
+	      <core-item core-drawer-toggle icon="account-circle" label="Usuarios" horizontal="" center="" layout="" class="core-selected" active=""></core-item>
+	      <core-item core-drawer-toggle icon="wallet-travel" label="Empresa" horizontal="" center="" layout="" class=""></core-item>
+	    </core-menu>
+    </div>
+  </core-header-panel>
+  <core-header-panel main>
+    <core-toolbar class="dark-theme">
+      <core-icon-button icon="menu" core-drawer-toggle></core-icon-button>
+      <div flex></div>
+      <core-icon-button icon="highlight-remove" ng-click="getLogout()"><span>Log Out</span></core-icon-button>
+      <!-- <div>Title</div> -->
+    </core-toolbar>
+    
+
+	<div horizontal layout>
+	  <div flex two layout vertical>
+	  	
+	  	<div auto-vertical>Alpha</div>
+	    <div auto-vertical>Beta</div>
+    	<div auto-vertical>Gamma</div>
+
+	  </div>
+	  <div flex three layout vertical>
+
+	  	<div auto-vertical>Alpha</div>
+	    <div auto-vertical>Beta</div>
+    	<div auto-vertical>Gamma</div>
+	  	
+	  </div>
+	</div>
+
+    
+  </core-header-panel>
+</core-drawer-panel>

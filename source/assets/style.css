@@ -1,0 +1,116 @@
+html, body {
+  		height: 100%;
+  		margin: 0;
+      color: #555;
+  		background-color: #E5E5E5;
+  		font-family: 'Roboto', sans-serif;
+}
+
+core-icon-button.blue{
+  background-color: #1078B5;
+  color: white;
+}
+
+/*General*/
+
+core-header-panel {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+core-toolbar {
+  background-color: #CFA0E9;
+}
+
+core-toolbar.dark-theme {
+  background-color: #1078B5;
+  color: #f1f1f1;
+  fill: #f1f1f1;
+}
+
+core-menu core-item{
+  color: white;
+}
+
+core-drawer-panel{
+  background: #FFF;
+}
+
+[drawer] {
+  background: #1078B5;
+}
+
+
+
+paper-button {
+  background: #1078B5;
+  color: white;
+}
+
+paper-button::shadow #ripple {
+  color: #FFFF00;
+}
+
+paper-spinner.blue::shadow .circle {
+  border-color: #4285f4;
+}
+
+paper-toast.red {
+  background: #EF5350;
+}
+
+/*customize*/
+
+#container{
+  width: 100%;
+  height: 100%;
+}
+
+#button-login{
+  margin-top: 45px !important;
+}
+
+#box-login{
+  width: 230px;
+  height: auto;
+  background: white;
+  top: 150px;
+  padding: 30px;
+}
+
+#box-login paper-input{
+  margin-top: 10px;
+}
+
+#box-login paper-input-decorator{
+  margin-top: 10px;
+}
+
+#box-login core-icon-button{
+  margin-top: 25px;
+/*  margin-bottom: 20px;*/
+}
+
+#box-login paper-spinner{
+  margin: 30px;
+}
+
+core-drawer-panel div [flex]{
+  height: 100%;
+  border-right: 1px solid #CCC;
+}
+
+core-drawer-panel div [flex]:last-child{
+  border-right: none;
+}
+
+core-drawer-panel div [auto-vertical]{
+  padding: 10px;
+  /*border-bottom: 1px solid #CCC;*/
+}
+
+
+
+    
